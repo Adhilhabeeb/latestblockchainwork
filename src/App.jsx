@@ -85,8 +85,8 @@ useEffect(() => {
       const provider = new ethers.BrowserProvider(window.ethereum);
       const signer = await provider.getSigner();
       const newContract = new ethers.Contract(Address, ABI, signer);
-      const myAddress = await newContract.myname();
-
+      const myAddress = await newContract.user();
+alert("user:"+myAddress)
       console.log(await newContract,"myyyyyybnnn")
       setContract(newContract);
 
@@ -116,7 +116,7 @@ useEffect(() => {
     try {
 
    
-      await contract.name("sameerrrrrrr")
+      await contract.name("abusatha")
       
       alert("Employee created successfully");
     } catch (error) {
